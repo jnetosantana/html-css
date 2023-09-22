@@ -23,6 +23,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
@@ -32,6 +33,16 @@
         thead {
             background-color: gray;
         }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: #383838;
+        }
+
+        tbody tr:nth-child(2n) { /*Fazer o efeito zebrado na tabela*/
+            background: lightgray;
+        }
+
         td.num {
             text-align: right;
         }
