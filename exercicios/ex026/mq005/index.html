@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick='clickMenu()'>menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="file:///C:/Users/jbpsn/Desktop/Estudos/Estudos%20Curso%20em%20V%C3%ADdeo/html-css/exercicios/ex026/mq005/index.html">Home</a></li>
+                <li><a href="https://www.fortnite.com/?lang=pt-BR">Fortnite</a></li>
+                <li><a href="https://www.leagueoflegends.com/pt-br/">League of Legends</a></li>
+                <li><a href="https://ff.garena.com/pt/">Free Fire</a></li>
+                <li><a href="https://playvalorant.com/pt-br/">Valorant</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>
+                <h3>Fortnite:</h3> 
+                O jogo é um battle royale lançado pela Epic Games em 2017, ele atrai o público com visuais únicos e parcerias inovadoras. Assim, atualmente ele alcança em média 30 milhões de jogadores simultâneos. 
+            </p>
+
+            <p>
+                <h3>League of Legends:</h3>
+                Um dos jogos mais conhecidos do mundo, até quem não é muito chegado dos games onlines conhece o famoso LoL. Com mais de 10 anos de carreira, o MOBA se tornou o mais popular e mais jogado da categoria, com aproximadamente 5 milhões de jogadores simultâneos.
+            </p>
+
+            <p>
+                <h3>Free Fire:</h3>
+                O game passou para a lista dos mais jogados desde o seu lançamento em 2017 por trazer a praticidade de poder jogar no celular. Assim, rapidamente alcançou o marco de jogo de celular mais baixado, trazendo praticidade e oportunidade para quem não tem acesso aos consoles e Pc, alcançando, em média, 1 milhão de jogadores diários. 
+            </p>
+            <p>
+                <h3>Valorant:</h3>
+                O FPS da Riot Games foi lançado em 2020 e desde então alcançou marcos incríveis e passou a fazer muito sucesso entre os players. Dessa forma, já conta com campeonatos mundiais e conquistou público rapidamente, disputando espaço com grandes nomes da categoria.
+            </p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
